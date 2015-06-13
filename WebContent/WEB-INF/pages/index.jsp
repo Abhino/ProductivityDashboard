@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hello Abhinav
+Hello Admin: Number of users you have are: ${count}
 </body>
 </html>
