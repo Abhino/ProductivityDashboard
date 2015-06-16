@@ -1,7 +1,5 @@
 package com.junit.test.dao;
 
-import com.productivity.dashboard.dao.JdbcDaoImpl;
-
 import junit.framework.TestCase;
 
 public class JdbcDaoTest extends TestCase {

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.productivity.dashboard.dao.JdbcDaoImpl;
+import com.productivity.dashboard.services.ApplicationServices;
 
 
 @Controller
@@ -18,7 +19,8 @@ public class HelloWorld {
 	{
 		logger.debug("Application Starting");
 		ModelAndView model = new ModelAndView("index");		
-		int count = JdbcDaoImpl.getUserCount();
+/*		int count = JdbcDaoImpl.getUserCount();*/
+		int count = ApplicationServices.retriveNumberOfUsers();
 		model.addObject("count",count);
 		return model;
 	}
