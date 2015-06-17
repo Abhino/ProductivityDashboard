@@ -9,7 +9,10 @@ public class JdbcDaoImpl {
 	private static final Logger logger = Logger.getLogger(JdbcDaoImpl.class);
 
 	private static JdbcTemplate jdbcTemplate;
-
+	
+	private JdbcDaoImpl(){		
+	}
+	
 	@Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemp) {
 		jdbcTemplate = jdbcTemp;
